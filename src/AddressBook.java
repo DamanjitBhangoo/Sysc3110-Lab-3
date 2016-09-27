@@ -2,7 +2,11 @@ import java.util.*;
 
 public class AddressBook {
 
-	static ArrayList<BuddyInfo> list = new ArrayList<BuddyInfo>();
+	private ArrayList<BuddyInfo> list;
+	
+	public AddressBook(){
+		this.list= new ArrayList<BuddyInfo>();
+	}
 	
 	public void addBuddy(BuddyInfo x) {
 		if (x != null ){
@@ -18,10 +22,11 @@ public class AddressBook {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		BuddyInfo x = new BuddyInfo("hi");
+		BuddyInfo x = new BuddyInfo("Potato");
 		AddressBook AB = new AddressBook();
 		System.out.println("Hello world!");
 		AB.addBuddy(x);
+		AB.removeBuddy(0);
 	}
 
 }
