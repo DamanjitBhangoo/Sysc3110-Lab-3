@@ -1,4 +1,4 @@
-import java.util.*;
+eimport java.util.*;
 
 public class AddressBook {
 
@@ -24,7 +24,7 @@ public class AddressBook {
 		// TODO Auto-generated method stub
 		BuddyInfo x = new BuddyInfo("Potato");
 		AddressBook AB = new AddressBook();
-		System.out.println("Hello world!");
+		System.out.println("Hey World!");
 		AB.addBuddy(x);
 		AB.removeBuddy(0);
 	}
